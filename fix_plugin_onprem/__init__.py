@@ -1,18 +1,18 @@
-from resotolib.baseresources import BaseResource
+from fixlib.baseresources import BaseResource
 import socket
 import multiprocessing
-import resotolib.proc
+import fixlib.proc
 from concurrent import futures
-from resotolib.baseplugin import BaseCollectorPlugin
+from fixlib.baseplugin import BaseCollectorPlugin
 from argparse import Namespace
-from resotolib.args import ArgumentParser
-from resotolib.config import Config, RunningConfig
+from fixlib.args import ArgumentParser
+from fixlib.config import Config, RunningConfig
 from .resources import OnpremLocation, OnpremRegion, OnpremNetwork
 from .ssh import instance_from_ssh
 from .config import OnpremConfig
 from paramiko import ssh_exception
 from typing import Dict
-from resotolib.logger import log, setup_logger
+from fixlib.logger import log, setup_logger
 
 
 class OnpremCollectorPlugin(BaseCollectorPlugin):
@@ -66,7 +66,7 @@ class OnpremCollectorPlugin(BaseCollectorPlugin):
         pool_args = {"max_workers": max_workers}
         if Config.onprem.fork_process:
             pool_args["mp_context"] = multiprocessing.get_context("spawn")
-            pool_args["initializer"] = resotolib.proc.collector_initializer
+            pool_args["initializer"] = fixlib.proc.collector_initializer
             pool_executor = futures.ProcessPoolExecutor
             collect_args = {
                 "args": ArgumentParser.args,
@@ -102,7 +102,7 @@ class OnpremCollectorPlugin(BaseCollectorPlugin):
 def collect_server(srv: Dict, args: Namespace = None, running_config: RunningConfig = None) -> Dict:
     if args is not None:
         ArgumentParser.args = args
-        setup_logger("resotoworker-onprem", force=True, level=getattr(args, "log_level", None))
+        setup_logger("fixworker-onprem", force=True, level=getattr(args, "log_level", None))
 
     if running_config is not None:
         Config.running_config.apply(running_config)
@@ -116,7 +116,7 @@ def collect_server(srv: Dict, args: Namespace = None, running_config: RunningCon
         hostname, port = hostname.split(":", 1)
 
     collector_name = f"onprem_{hostname}"
-    resotolib.proc.set_thread_name(collector_name)
+    fixlib.proc.set_thread_name(collector_name)
     try:
         s = instance_from_ssh(
             hostname,

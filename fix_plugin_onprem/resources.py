@@ -1,7 +1,7 @@
 from attrs import define
 from typing import Optional, ClassVar
-from resotolib.graph import Graph
-from resotolib.baseresources import (
+from fixlib.graph import Graph
+from fixlib.baseresources import (
     BaseAccount,
     BaseRegion,
     BaseInstance,
