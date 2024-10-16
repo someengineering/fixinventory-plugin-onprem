@@ -1,6 +1,3 @@
-# Note: this workflow is automatically generated via the `create_pr` script in the same folder.
-# Please do not change the file, but the script!
-
 name: Check PR (Plugin onprem)
 on:
   push:
