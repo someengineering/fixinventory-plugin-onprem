@@ -1,0 +1,141 @@
+aiodns==3.2.0
+    # via aiohttp
+aiohappyeyeballs==2.4.3
+    # via aiohttp
+aiohttp[speedups]==3.10.10
+    # via fixinventorylib
+aiosignal==1.3.1
+    # via aiohttp
+appdirs==1.4.4
+    # via pint
+attrs==24.2.0
+    # via
+    #   aiohttp
+    #   cattrs
+    #   fixinventorylib
+autocommand==2.2.2
+    # via jaraco-text
+bcrypt==4.2.0
+    # via paramiko
+brotli==1.1.0
+    # via aiohttp
+cattrs==24.1.2
+    # via fixinventorylib
+certifi==2024.8.30
+    # via requests
+cffi==1.17.1
+    # via
+    #   cryptography
+    #   pycares
+    #   pynacl
+charset-normalizer==3.4.0
+    # via requests
+cheroot==10.0.1
+    # via cherrypy
+cherrypy==18.10.0
+    # via fixinventorylib
+cryptography==43.0.1
+    # via
+    #   fixinventorylib
+    #   paramiko
+fixinventorylib==4.1.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+flexcache==0.3
+    # via pint
+flexparser==0.3.1
+    # via pint
+frozendict==2.4.6
+    # via fixinventorylib
+frozenlist==1.4.1
+    # via
+    #   aiohttp
+    #   aiosignal
+idna==3.10
+    # via
+    #   requests
+    #   yarl
+isodate==0.7.2
+    # via fixinventorylib
+jaraco-collections==5.1.0
+    # via cherrypy
+jaraco-context==6.0.1
+    # via jaraco-text
+jaraco-functools==4.1.0
+    # via
+    #   cheroot
+    #   jaraco-text
+    #   tempora
+jaraco-text==4.0.0
+    # via jaraco-collections
+jsons==1.6.3
+    # via fixinventorylib
+more-itertools==10.5.0
+    # via
+    #   cheroot
+    #   cherrypy
+    #   jaraco-functools
+    #   jaraco-text
+multidict==6.1.0
+    # via
+    #   aiohttp
+    #   yarl
+networkx==3.4.1
+    # via fixinventorylib
+paramiko==3.5.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+parsy==2.1
+    # via fixinventorylib
+pint==0.24.3
+    # via fixinventorylib
+portend==3.2.0
+    # via cherrypy
+prometheus-client==0.21.0
+    # via fixinventorylib
+propcache==0.2.0
+    # via yarl
+psutil==6.0.0
+    # via fixinventorylib
+pycares==4.4.0
+    # via aiodns
+pycparser==2.22
+    # via cffi
+pyjwt==2.9.0
+    # via fixinventorylib
+pynacl==1.5.0
+    # via paramiko
+python-dateutil==2.9.0.post0
+    # via
+    #   fixinventorylib
+    #   tempora
+pyyaml==6.0.2
+    # via fixinventorylib
+requests==2.32.3
+    # via fixinventorylib
+setuptools==75.2.0
+    # via zc-lockfile
+six==1.16.0
+    # via python-dateutil
+tempora==5.7.0
+    # via portend
+typeguard==4.3.0
+    # via fixinventorylib
+typing-extensions==4.12.2
+    # via
+    #   flexcache
+    #   flexparser
+    #   pint
+    #   typeguard
+typish==1.9.3
+    # via jsons
+tzdata==2024.2
+    # via fixinventorylib
+tzlocal==5.2
+    # via fixinventorylib
+urllib3==2.2.3
+    # via requests
+websocket-client==1.8.0
+    # via fixinventorylib
+yarl==1.15.4
+    # via aiohttp
+zc-lockfile==3.0.post1
+    # via cherrypy

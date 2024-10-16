@@ -9,11 +9,6 @@ on:
     branches:
       - main
   pull_request:
-    paths:
-      - 'fixlib/**'
-      - 'plugins/onprem/**'
-      - '.github/**'
-      - 'requirements-all.txt'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.run_id }}
@@ -37,28 +32,28 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{runner.os}}-pip-${{hashFiles('./plugins/onprem/pyproject.toml')}}
+          key: ${{runner.os}}-pip-${{hashFiles('./pyproject.toml')}}
           restore-keys: |
             ${{runner.os}}-pip-
 
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install --upgrade --editable fixlib/
+          pip install --upgrade fixinventorylib
           pip install tox wheel flake8 build
 
       - name: Run tests
-        working-directory: ./plugins/onprem
+        working-directory: ./
         run: tox
 
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4
         with:
           name: plugin-onprem-code-coverage-report
-          path: ./plugins/onprem/htmlcov/
+          path: ./htmlcov/
 
       - name: Build a binary wheel and a source tarball
-        working-directory: ./plugins/onprem
+        working-directory: ./
         run: >-
           python -m
           build
@@ -72,4 +67,4 @@ jobs:
         with:
           user: __token__
           password: ${{ secrets.PYPI_FIXINVENTORY_PLUGIN_ONPREM }}
-          packages_dir: ./plugins/onprem/dist/
+          packages_dir: ./dist/

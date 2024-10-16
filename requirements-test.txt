@@ -1,0 +1,239 @@
+aiodns==3.2.0
+    # via aiohttp
+aiohappyeyeballs==2.4.3
+    # via aiohttp
+aiohttp[speedups]==3.10.10
+    # via fixinventorylib
+aiosignal==1.3.1
+    # via aiohttp
+appdirs==1.4.4
+    # via pint
+astroid==3.3.5
+    # via pylint
+attrs==24.2.0
+    # via
+    #   aiohttp
+    #   cattrs
+    #   fixinventorylib
+    #   hypothesis
+autocommand==2.2.2
+    # via jaraco-text
+bcrypt==4.2.0
+    # via paramiko
+black==24.10.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+brotli==1.1.0
+    # via aiohttp
+cachetools==5.5.0
+    # via tox
+cattrs==24.1.2
+    # via fixinventorylib
+certifi==2024.8.30
+    # via requests
+cffi==1.17.1
+    # via
+    #   cryptography
+    #   pycares
+    #   pynacl
+chardet==5.2.0
+    # via tox
+charset-normalizer==3.4.0
+    # via requests
+cheroot==10.0.1
+    # via cherrypy
+cherrypy==18.10.0
+    # via fixinventorylib
+click==8.1.7
+    # via black
+colorama==0.4.6
+    # via tox
+coverage[toml]==7.6.3
+    # via
+    #   fixinventory-plugin-onprem (pyproject.toml)
+    #   pytest-cov
+cryptography==43.0.1
+    # via
+    #   fixinventorylib
+    #   paramiko
+dill==0.3.9
+    # via pylint
+distlib==0.3.9
+    # via virtualenv
+filelock==3.16.1
+    # via
+    #   tox
+    #   virtualenv
+fixinventorylib==4.1.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+flake8==7.1.1
+    # via
+    #   fixinventory-plugin-onprem (pyproject.toml)
+    #   pep8-naming
+flexcache==0.3
+    # via pint
+flexparser==0.3.1
+    # via pint
+frozendict==2.4.6
+    # via fixinventorylib
+frozenlist==1.4.1
+    # via
+    #   aiohttp
+    #   aiosignal
+hypothesis==6.115.3
+    # via fixinventory-plugin-onprem (pyproject.toml)
+idna==3.10
+    # via
+    #   requests
+    #   yarl
+iniconfig==2.0.0
+    # via pytest
+isodate==0.7.2
+    # via fixinventorylib
+isort==5.13.2
+    # via pylint
+jaraco-collections==5.1.0
+    # via cherrypy
+jaraco-context==6.0.1
+    # via jaraco-text
+jaraco-functools==4.1.0
+    # via
+    #   cheroot
+    #   jaraco-text
+    #   tempora
+jaraco-text==4.0.0
+    # via jaraco-collections
+jsons==1.6.3
+    # via fixinventorylib
+mccabe==0.7.0
+    # via
+    #   flake8
+    #   pylint
+more-itertools==10.5.0
+    # via
+    #   cheroot
+    #   cherrypy
+    #   jaraco-functools
+    #   jaraco-text
+multidict==6.1.0
+    # via
+    #   aiohttp
+    #   yarl
+mypy==1.12.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+mypy-extensions==1.0.0
+    # via
+    #   black
+    #   mypy
+networkx==3.4.1
+    # via fixinventorylib
+packaging==24.1
+    # via
+    #   black
+    #   pyproject-api
+    #   pytest
+    #   tox
+paramiko==3.5.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+parsy==2.1
+    # via fixinventorylib
+pathspec==0.12.1
+    # via black
+pep8-naming==0.14.1
+    # via fixinventory-plugin-onprem (pyproject.toml)
+pint==0.24.3
+    # via fixinventorylib
+platformdirs==4.3.6
+    # via
+    #   black
+    #   pylint
+    #   tox
+    #   virtualenv
+pluggy==1.5.0
+    # via
+    #   pytest
+    #   tox
+portend==3.2.0
+    # via cherrypy
+prometheus-client==0.21.0
+    # via fixinventorylib
+propcache==0.2.0
+    # via yarl
+psutil==6.0.0
+    # via fixinventorylib
+pycares==4.4.0
+    # via aiodns
+pycodestyle==2.12.1
+    # via flake8
+pycparser==2.22
+    # via cffi
+pyflakes==3.2.0
+    # via flake8
+pyjwt==2.9.0
+    # via fixinventorylib
+pylint==3.3.1
+    # via fixinventory-plugin-onprem (pyproject.toml)
+pynacl==1.5.0
+    # via paramiko
+pyproject-api==1.8.0
+    # via tox
+pytest==8.3.3
+    # via
+    #   fixinventory-plugin-onprem (pyproject.toml)
+    #   pytest-asyncio
+    #   pytest-cov
+    #   pytest-mock
+pytest-asyncio==0.24.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+pytest-cov==5.0.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+pytest-mock==3.14.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+pytest-runner==6.0.1
+    # via fixinventory-plugin-onprem (pyproject.toml)
+python-dateutil==2.9.0.post0
+    # via
+    #   fixinventorylib
+    #   tempora
+pyyaml==6.0.2
+    # via fixinventorylib
+requests==2.32.3
+    # via fixinventorylib
+setuptools==75.2.0
+    # via zc-lockfile
+six==1.16.0
+    # via python-dateutil
+sortedcontainers==2.4.0
+    # via hypothesis
+tempora==5.7.0
+    # via portend
+tomlkit==0.13.2
+    # via pylint
+tox==4.22.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+typeguard==4.3.0
+    # via fixinventorylib
+typing-extensions==4.12.2
+    # via
+    #   flexcache
+    #   flexparser
+    #   mypy
+    #   pint
+    #   typeguard
+typish==1.9.3
+    # via jsons
+tzdata==2024.2
+    # via fixinventorylib
+tzlocal==5.2
+    # via fixinventorylib
+urllib3==2.2.3
+    # via requests
+virtualenv==20.26.6
+    # via tox
+websocket-client==1.8.0
+    # via fixinventorylib
+wheel==0.44.0
+    # via fixinventory-plugin-onprem (pyproject.toml)
+yarl==1.15.4
+    # via aiohttp
+zc-lockfile==3.0.post1
+    # via cherrypy
