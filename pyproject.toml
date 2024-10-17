@@ -54,10 +54,8 @@ onprem = "fix_plugin_onprem:OnpremCollectorPlugin"
 
 [project.urls]
 Documentation = "https://inventory.fix.security"
-Source = "https://github.com/someengineering/fix/tree/main/plugins/onelogin"
+Source = "https://github.com/someengineering/fixinventory-plugin-onprem"
 
 [build-system]
 requires = ["setuptools>=67.8.0", "wheel>=0.40.0", "build>=0.10.0"]
 build-backend = "setuptools.build_meta"
-
-
