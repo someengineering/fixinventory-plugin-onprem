@@ -1,9 +1,9 @@
 [project]
 name = "fixinventory-plugin-onprem"
 description = "Fix On-Premises Collector Plugin"
-version = "4.1.1"
+version = "4.1.2"
 authors = [{name="Some Engineering Inc."}]
-license = { text="AGPLv3" }
+license = {file="LICENSE"}
 requires-python = ">=3.12"
 classifiers = [
     # Current project status
