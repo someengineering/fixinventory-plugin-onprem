@@ -196,7 +196,7 @@ python-dateutil==2.9.0.post0
     #   tempora
 pyyaml==6.0.2
     # via fixinventorylib
-requests==2.32.3
+requests==2.32.4
     # via fixinventorylib
 setuptools==75.2.0
     # via zc-lockfile
