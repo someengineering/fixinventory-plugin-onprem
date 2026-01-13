@@ -227,7 +227,7 @@ tzlocal==5.2
     # via fixinventorylib
 urllib3==2.2.3
     # via requests
-virtualenv==20.26.6
+virtualenv==20.36.1
     # via tox
 websocket-client==1.8.0
     # via fixinventorylib
