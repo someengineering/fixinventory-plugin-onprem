@@ -231,7 +231,7 @@ virtualenv==20.26.6
     # via tox
 websocket-client==1.8.0
     # via fixinventorylib
-wheel==0.44.0
+wheel==0.46.2
     # via fixinventory-plugin-onprem (pyproject.toml)
 yarl==1.15.4
     # via aiohttp
