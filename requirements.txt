@@ -34,7 +34,7 @@ cheroot==10.0.1
     # via cherrypy
 cherrypy==18.10.0
     # via fixinventorylib
-cryptography==43.0.1
+cryptography==46.0.5
     # via
     #   fixinventorylib
     #   paramiko

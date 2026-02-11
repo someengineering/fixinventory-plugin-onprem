@@ -51,7 +51,7 @@ coverage[toml]==7.6.3
     # via
     #   fixinventory-plugin-onprem (pyproject.toml)
     #   pytest-cov
-cryptography==43.0.1
+cryptography==46.0.5
     # via
     #   fixinventorylib
     #   paramiko
